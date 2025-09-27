@@ -103,8 +103,10 @@ img {
   margin-left: 156px;
 
 }
-.nav {
+.navigation {  
   margin-right: 332px;
+  display: flex;
+  align-items: center;
 }
 .nav-list {
   display: flex;
