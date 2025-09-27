@@ -277,9 +277,8 @@ color: var(--slate);
 }
 
 /* Footer Style */
-.footer-container {
+.footer {
   padding: 100px 0px;
-  
 }
 .footer-text {
   color: var(--cloud);
