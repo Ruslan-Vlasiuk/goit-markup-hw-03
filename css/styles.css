@@ -241,14 +241,20 @@ padding-bottom: 32px;}
 }
 /* Portfolio-STYLES */
 
-.portfolio-h2 {
+.portfolio-section {
+  padding: 120px 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
 }
-
-.portfolio-h3 {
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.portfolio-item {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.20;
