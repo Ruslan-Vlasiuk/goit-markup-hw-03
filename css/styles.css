@@ -81,11 +81,15 @@ img {
 .header {
   padding-bottom: 25.5px;
   padding-top: 25.5px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header .container{
   display: flex;
   align-items: center;
+  width: 1158px;
+  margin-right: auto;
+  padding: 0 15px;
 }
 .logo-header {
   font-family: "Raleway", sans-serif;
@@ -96,8 +100,8 @@ img {
   text-transform: uppercase;
   width: 115px;
   height: 24px;
-  margin-right: auto;
   margin-left: 156px;
+
 }
 .nav {
   margin-right: 332px;
