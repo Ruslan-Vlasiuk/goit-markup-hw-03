@@ -101,6 +101,7 @@ img {
   width: 115px;
   height: 24px;
   margin-left: 156px;
+  margin-right: 76px;
 
 }
 .navigation {  
@@ -116,6 +117,7 @@ img {
 
 .nav-item {
   font-weight: 500;
+  padding: 24px 0;
 }
 .contacts-list {
   color: var(--slate);
@@ -123,7 +125,7 @@ img {
   align-items: center;
   margin-right: 156px;
 }
-.contacts-item {
+.contacts-item:not(:last-child) {
 margin-right: 40px;
 }
 
