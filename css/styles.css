@@ -85,8 +85,8 @@ img {
 .header .container{
   display: flex;
   align-items: center;
-  margin-right: auto;
-  padding: 0 15px;
+  width: 1158px;
+  
 }
 .logo-header {
   font-family: "Raleway", sans-serif;
