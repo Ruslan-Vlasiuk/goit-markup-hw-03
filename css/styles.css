@@ -175,16 +175,18 @@ img {
 
 /* ADVANTAGES STYLE */
 .advantages {
-  padding: 50px 0;
-}
-.advantages-h2 {
-
+  padding: 156px 0;
 }
 .advantages-list {
+  display: flex;
+  justify-self: space-between;
+  gap: 24px;
 }
 .advantages-item {
+  width: calc((100% - 24 * 3px)/3);
 }
-.advantages-h3 {
+.advantages-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.20;
