@@ -277,8 +277,13 @@ color: var(--slate);
 }
 
 /* Footer Style */
+.footer-container {
+  padding: 100px 0px;
+  
+}
 .footer-text {
   color: var(--cloud);
+  max-width: 264px
 }
 .span {
   color: var(--iris);
@@ -287,6 +292,8 @@ color: var(--slate);
   background-color: var(--navy-blue);
 }
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -295,6 +302,3 @@ color: var(--slate);
   text-transform: uppercase;
   color: var(--cloud);
 }
-
-
-/* testq */
