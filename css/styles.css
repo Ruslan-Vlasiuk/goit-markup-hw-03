@@ -128,6 +128,9 @@ img {
 .contacts-item:not(:last-child) {
 margin-right: 40px;
 }
+.contacts-link {
+  white-space: nowrap;
+}
 
 
 /* HERO STYLE */
