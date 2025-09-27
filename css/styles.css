@@ -253,8 +253,8 @@ padding-bottom: 32px;}
 }
 .portfolio-div {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc
-  border-top: none
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-list {
   margin-top: 72px;
@@ -297,4 +297,4 @@ color: var(--slate);
 }
 
 
-/* test */
+/* testq */
