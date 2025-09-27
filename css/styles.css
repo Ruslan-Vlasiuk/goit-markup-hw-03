@@ -112,10 +112,12 @@ img {
   align-items: center;
   gap: 40px;
 }
+.nav-link {
+  padding: 24px 0;
+}
 
 .nav-item {
   font-weight: 500;
-  padding: 24px 0;
 }
 .contacts-list {
   color: var(--slate);
