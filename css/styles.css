@@ -241,14 +241,17 @@ padding-bottom: 32px;}
 }
 /* Portfolio-STYLES */
 
+.portfolio {
+  padding: 120px 0 120px 0;
+}
 .portfolio-section {
-  padding: 120px 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
 }
 .portfolio-list {
+  margin-top: 72px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
