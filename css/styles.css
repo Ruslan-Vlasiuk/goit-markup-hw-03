@@ -42,8 +42,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  max-width: 100%;
-  height: auto;
 }
 .list {
   margin: 0;
@@ -51,7 +49,7 @@ img {
   list-style: none;
 }
 .button {
-  coursor: pointer;
+  cursor: pointer;
 }
 .link {
   text-decoration: none;
@@ -113,11 +111,11 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .nav-item {
   font-weight: 500;
+  padding: 24px 0;
 }
 .contacts-list {
   color: var(--slate);
