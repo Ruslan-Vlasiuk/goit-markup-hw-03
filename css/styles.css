@@ -74,9 +74,9 @@ img {
 }
 
 .container {
-  width: 1158px;  /* Змінив max-width на width */
+  width: 1158px; 
   margin: 0 auto;
-  padding: 0 15px;  /* Додав padding */
+  padding: 0 15px;  
 }
 
 /* HEADER STYLE */
@@ -106,7 +106,7 @@ img {
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: auto;  /* Змінив з 332px на auto */
+  margin-right: auto;  
 }
 
 .nav-list {
@@ -117,7 +117,7 @@ img {
 
 .nav-link {
   padding: 24px 0;
-  display: block;  /* Додав для кращої клікабельності */
+  display: block;  
 }
 
 .nav-item {
@@ -125,22 +125,21 @@ img {
 }
 
 .contacts {
-  font-style: normal;  /* Додав для address */
+  font-style: normal; 
 }
 
 .contacts-list {
   color: var(--slate);
   display: flex;
   align-items: center;
-  gap: 40px;  /* Використовую gap замість margin */
-  /* Видалив margin-right: 156px */
+  gap: 40px;  
 }
 
 
 
 .contacts-link {
   white-space: nowrap;
-  display: inline-block;  /* Додав */
+  display: inline-block; 
 }
 
 /* HERO STYLE */
