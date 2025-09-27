@@ -17,7 +17,6 @@
   --letter-spacing: 0.02em;
 }
 
-
 /*  */
 body {
   font-family: var(--fonts);
@@ -27,6 +26,7 @@ body {
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
 }
+
 /* ====== RESET ====== */
 h1,
 h2,
@@ -38,42 +38,46 @@ p {
   margin: 0;
   padding: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .button {
   cursor: pointer;
 }
+
 .link {
   text-decoration: none;
   color: inherit;
 }
+
 .is-hidden {
-  position:absolute;
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden
+  overflow: hidden;
 }
+
 .container {
-  max-width: 1440px;
+  width: 1158px;  /* Змінив max-width на width */
   margin: 0 auto;
+  padding: 0 15px;  /* Додав padding */
 }
-
-
 
 /* HEADER STYLE */
 .header {
@@ -82,13 +86,12 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header .container{
+.header .container {
   display: flex;
   align-items: center;
-  width: 1158px;
-  margin-right: auto;
-  padding: 0 15px;
+  /* Видалив дублювання width, margin і padding - вони вже є в .container */
 }
+
 .logo-header {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -96,57 +99,72 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  width: 115px;
-  height: 24px;
-  margin-left: 156px;
+  /* Видалив width і height */
+  /* Видалив margin-left: 156px */
   margin-right: 76px;
-
 }
-.navigation {  
-  margin-right: 332px;
+
+.navigation {
   display: flex;
   align-items: center;
+  margin-right: auto;  /* Змінив з 332px на auto */
 }
+
 .nav-list {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+
 .nav-link {
   padding: 24px 0;
+  display: block;  /* Додав для кращої клікабельності */
 }
 
 .nav-item {
   font-weight: 500;
 }
+
+.contacts {
+  font-style: normal;  /* Додав для address */
+}
+
 .contacts-list {
   color: var(--slate);
   display: flex;
   align-items: center;
-  margin-right: 156px;
+  gap: 40px;  /* Використовую gap замість margin */
+  /* Видалив margin-right: 156px */
 }
-.contacts-item:not(:last-child) {
-margin-right: 40px;
-}
+
+/* Видалив це правило - використовую gap */
+/* .contacts-item:not(:last-child) {
+  margin-right: 40px;
+} */
+
 .contacts-link {
   white-space: nowrap;
+  display: inline-block;  /* Додав */
 }
 
-
 /* HERO STYLE */
-
 .hero {
   background: var(--navy-blue);
   padding-top: 188px;
   padding-bottom: 292px;
 }
+
+.hero .container {
+  text-align: center;  /* Додав для центрування вмісту */
+}
+
 .h1-hero {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   color: var(--white);
   max-width: 496px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;  /* Додав margin: 0 auto для центрування */
 }
 
 .button-hero {
@@ -155,24 +173,32 @@ margin-right: 40px;
   color: var(--white);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--iris);
+  padding: 16px 32px;  /* Додав padding для кнопки */
+  border: none;  /* Додав */
+  border-radius: 4px;  /* Додав */
 }
 
 /* ADVANTAGES STYLE */
 .advantages {
   padding: 50px 0;
 }
-.advantages-h2 {
 
-}
 .advantages-list {
+  display: flex;  /* Додав */
+  gap: 24px;  /* Додав */
 }
+
 .advantages-item {
+  flex: 1;  /* Додав */
 }
+
 .advantages-h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.20;
+  margin-bottom: 8px;  /* Додав */
 }
+
 .advantages-text {
   font-weight: 400;
   color: var(--slate);
@@ -184,62 +210,104 @@ margin-right: 40px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .team-h2 {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   margin-bottom: 72px;
 }
+
+.team-list {
+  display: flex;  /* Додав */
+  gap: 24px;  /* Додав */
+  justify-content: center;  /* Додав */
+}
+
 .team-item {
   width: 264px;
   border-radius: 0 0 4px 4px;
   background: var(--white);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  text-align: center;  /* Додав */
 }
-.team-item:not(:last-child) {
+
+/* Видалив - використовую gap */
+/* .team-item:not(:last-child) {
   margin-right: 24px;
-}
+} */
+
 .team-img {
-padding-bottom: 32px;}
+  /* Змінив padding на margin */
+  margin-bottom: 32px;
+}
+
 .team-h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.20;
-  padding-bottom: 8px;
+  /* Змінив padding на margin */
+  margin-bottom: 8px;
 }
+
 .team-text {
-  padding-bottom: 32px;
+  /* Змінив padding на margin і додав padding для внутрішнього простору */
+  margin-bottom: 32px;
 }
 
 /* Portfolio-STYLES */
+.portfolio {
+  padding: 120px 0;  /* Додав */
+}
 
 .portfolio-h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
+  margin-bottom: 72px;  /* Додав */
+}
+
+.portfolio-list {
+  display: flex;  /* Додав */
+  flex-wrap: wrap;  /* Додав */
+  gap: 24px;  /* Додав */
+  justify-content: center;  /* Додав */
+}
+
+.portfolio-item {
+  width: 360px;  /* Додав */
 }
 
 .portfolio-h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.20;
+  margin: 32px 16px 8px;  /* Додав */
 }
+
 .portfolio-text {
-font-weight: 400;
-color: var(--slate);
+  font-weight: 400;
+  color: var(--slate);
+  margin: 0 16px 32px;  /* Додав */
 }
 
 /* Footer Style */
+.footer {
+  background-color: var(--navy-blue);
+  padding: 100px 0;  /* Додав */
+}
+
 .footer-text {
   color: var(--cloud);
+  max-width: 264px;  /* Додав */
+  margin-top: 16px;  /* Додав */
 }
+
 .span {
   color: var(--iris);
 }
-.footer {
-  background-color: var(--navy-blue);
-}
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -248,5 +316,5 @@ color: var(--slate);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--cloud);
+  display: inline-block;  /* Додав */
 }
-
