@@ -88,8 +88,9 @@ img {
 
 .header .container {
   display: flex;
+  padding: 0 15px;
   align-items: center;
-  /* Видалив дублювання width, margin і padding - вони вже є в .container */
+
 }
 
 .logo-header {
@@ -99,8 +100,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* Видалив width і height */
-  /* Видалив margin-left: 156px */
   margin-right: 76px;
 }
 
@@ -137,10 +136,7 @@ img {
   /* Видалив margin-right: 156px */
 }
 
-/* Видалив це правило - використовую gap */
-/* .contacts-item:not(:last-child) {
-  margin-right: 40px;
-} */
+
 
 .contacts-link {
   white-space: nowrap;
@@ -232,10 +228,7 @@ img {
   text-align: center;  /* Додав */
 }
 
-/* Видалив - використовую gap */
-/* .team-item:not(:last-child) {
-  margin-right: 24px;
-} */
+
 
 .team-img {
   /* Змінив padding на margin */
