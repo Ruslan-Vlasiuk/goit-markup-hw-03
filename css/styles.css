@@ -181,6 +181,7 @@ img {
   display: flex;
   justify-self: space-between;
   gap: 24px;
+
 }
 .advantages-item {
   width: calc((100% - 24 * 3px)/4);
@@ -202,11 +203,15 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.team-h2 {
+.team-h {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
 }
 .team-item {
   width: 264px;
@@ -224,9 +229,11 @@ padding-bottom: 32px;}
   font-size: 20px;
   line-height: 1.20;
   padding-bottom: 8px;
+  text-align: center;
 }
 .team-text {
   padding-bottom: 32px;
+  text-align: center;
 }
 
 /* Portfolio-STYLES */
